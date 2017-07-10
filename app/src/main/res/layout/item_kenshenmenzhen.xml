@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_kenshimenzhen_shape"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="140dp">
+
+            <TextView
+                android:id="@+id/tv_line_gray"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_line_blue"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_line_gray"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/tv_line_green"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_line_blue"
+                android:background="@color/titile_blue" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_kenshimenzhen_wardName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/bg_background"
+                android:gravity="center"
+                android:text="科室" />
+
+            <TextView
+                android:id="@+id/tv_kenshimenzhen_zhuanjia"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="专家号" />
+
+            <TextView
+                android:id="@+id/tv_kenshimenzhen_zhuren"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/bg_background"
+                android:gravity="center"
+                android:text="主任医师" />
+
+            <TextView
+                android:id="@+id/tv_kenshimenzhen_zhuzhi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="主治医师" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

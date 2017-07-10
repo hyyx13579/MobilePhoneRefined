@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile_blue">
+
+
+        <TextView
+            android:id="@+id/tv_menzhen_timeChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_blue_time_choose"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrow01_xhdpi"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="2015-06-02  至  2016-06-02"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile_blue"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:id="@+id/horscroll_menzhen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@color/titile_blue"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/ll_menzhenBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_menzhenBar_one"
+                    style="@style/bar_text"
+                    android:text="科室门诊挂号人次" />
+
+                <TextView
+                    android:id="@+id/tv_menzhenBar_two"
+                    style="@style/bar_text"
+                    android:text="门诊费药比" />
+
+                <TextView
+                    android:id="@+id/tv_menzhenBar_three"
+                    style="@style/bar_text"
+                    android:text="年度三类卡统计" />
+
+                <TextView
+                    android:id="@+id/tv_menzhenBar_four"
+                    style="@style/bar_text"
+                    android:text="年度门诊量统计" />
+
+                <TextView
+                    android:id="@+id/tv_menzhenBar_five"
+                    style="@style/bar_text"
+                    android:text="门急诊挂号人次" />
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/iv_commonTitle_zhankai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@mipmap/zhankai_xhdpi" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_menzhen_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menzhen_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/lv_menzhen_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"></ListView>
+
+
+            <RelativeLayout
+                android:id="@+id/ll_menzhen_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_black"></RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
